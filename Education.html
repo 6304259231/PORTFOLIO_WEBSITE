@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mothukuru Vishnuvardhan - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #212529;
+            color: #495057;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #nav-bar {
+            margin: 0px ;
+            box-shadow: 2px 2px 5px rgb(251, 165, 165);
+            position: sticky;
+            top : 0px;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+            transition: background 0.3s ease;
+        }
+
+        .navbar-brand:hover,
+        .navbar-nav .nav-link:hover {
+            background-color: #495057;
+            border-radius: 12px;
+        }
+        .edu-section {
+            margin :10px 50px;
+            padding: 20px;
+        }
+
+        .txt-head {
+            margin-left: 5%;
+            margin-top: 20px;
+            text-decoration-line: underline;
+        }
+
+        .cards-edu {
+            width: 100%;
+            margin-top: 30px;
+            height: 180px;
+            min-height: 200px;
+            line-height: 2;
+        }
+        
+        .card:hover {
+            transform: scale(1.05); /* Enlarge the card on hover */
+        }
+
+        .card {
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .txt-head {
+            color: #007bff; 
+            font-size: 35px; 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         }
+
+        .card-title {
+            color: #007bff; 
+            font-size: 24px; 
+        }
+
+        .card-text {
+            color: #495057;
+            font-size: 18px;
+        }
+
+        p {
+            color: #6c757d;
+            font-size: 16px; 
+        }
+        button{
+            text-align: center;
+            width: 10%;
+            margin: 0px auto;
+            padding: 10px;
+            
+        }
+        @media only screen and(max-width = 380px) {
+            .cards-edu {
+            width: 100%;
+            margin-top: 30px;
+            height: 220px;
+            line-height: 3;
+        }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">PROTFOLIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Education.html">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="technical_skills.html">Technical Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="certifications.html">Certifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="languages.html">Languages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact-me.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Education Section -->
+    <section class="edu-section">
+        <h1 class="txt-head" style="margin: 0px;text-decoration: none;">EDUCATIONAL PROFILE</h1>
+
+        <div class="card cards-edu">
+            <div class="card-body">
+                <h2 class="card-title">Graduation</h2>
+                <h6 class="card-text"> B.Tech in Electrical & Electronics Engineering under the JAWAHARLAL NEHRU TECHNOLOGICCAL UNIVERSITY ANANTHAPUR (JNTUA) with aggregate 73%.</h6>
+                <p>ROLL NO : 20L25A0204</p>
+                <p style="padding-bottom: 25px" class="batch"><i style="padding-bottom: 20px;">Batch (2020-2023)</i></p>
+            </div>
+        </div>
+
+        <div class="card cards-edu">
+            <div class="card-body">
+                <h2 class="card-title">DIPLOMA</h2>
+                <h6 class="card-text"> Diploma in Electrical & Electronics Engineering in Government polytechnic college proddatur, with Overall 80%.</h6>
+                <p>ROLL NO : 17022-EE-243</p>
+                <p class="batch"><i>Batch (2017-2020)</i></p>
+            </div>
+        </div>
+
+        <div class="card cards-edu">
+            <div class="card-body">
+                <h2 class="card-title">SSC</h2>
+                <h6 class="card-text"> Schooling in Municipal vasanthapeta high school proddatur, with Overall 8.7 GPA.</h6>
+                <p class="batch"><i>Batch (2017)</i></p>
+            </div>
+        </div>
+
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>

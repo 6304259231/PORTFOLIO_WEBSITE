@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        /* internal styles */
+
+         body {
+            background-color: #212529;
+            transition: background 0.5s ease;
+            color: #495057;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #nav-bar {
+            margin: 0px 0;
+            box-shadow: 2px 2px 5px rgb(251, 165, 165);
+            position: sticky;
+            top : 0px;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+            transition: background 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #495057; /* Darker background color on hover */
+            border-radius: 12px;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+
+        #project-sec{
+            margin: 30px 30px;
+        }
+        .card{
+            cursor: pointer;
+            width: 75%;
+            margin: 30px auto;
+            transition: transform 0.3s ease;
+        }
+        .txt-head {
+            margin-left : 2px ;
+            margin-top: 30px;
+            color: #007bff; 
+            font-size: 35px; 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .card-text{
+            letter-spacing: 1.5px;
+            
+        }
+        .card:hover{
+            transform: scale(1.1);
+        } 
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="#">PROTFOLIO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="technical_skills.html">Technical Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="certifications.html">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="languages.html">Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact-me.html">Contact Me</a>
+                    </li>
+            </div>
+     </nav>
+</section>
+  <section id="project-sec">
+    <h1 class="txt-head" style="text-decoration: none;">CERTIFICATIONS</h1>
+    <div class="card text-center col-12">
+        <div class="card-header">
+           <h2> Web Developer Certification </h2>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title"><br>
+            Issued by : Freecode Camp <br>
+            Date Earned : <i style="color: rgba(22,25,25,0.7)">August 2023</i> <br>
+            </h4>
+            <p class="card-text"><span style="font-size: 18px;font-size: 1000;margin-top: 25px;">Description : </span><br>
+            Completed a comprehensive Web Developer certification program through Freecode Camp, demonstrating proficiency in modern web development technologies and practices. The program covered a wide range of topics, including HTML, CSS, JavaScript, and responsive web design. Successfully completed practical projects and assessments to validate acquired skills. This certification serves as a testament to my commitment to continuous learning and staying updated with industry best practices in web development. </p>
+            <a href="https://www.freecodecamp.org/certification/fccec5537e8-cc23-42d4-9970-b2515c7ffe19/responsive-web-design" class="btn btn-primary">CHECK HERE</a>
+        </div>
+        <div class="card-footer text-muted">
+          Completed
+        </div>
+    </div>
+    <div class="card text-center col-12">
+        <div class="card-header">
+           <h2> Communication Certification </h2>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title"><br>
+            Issued by : EDYODA <br>
+            Date Earned : <i style="color: rgba(22,25,25,0.7)">August 2023</i><br>
+            </h4>
+            <p class="card-text"><span style="font-size: 18px;font-size: 1000;">Description : </span> <br>
+                Successfully completed a Professional Communication Certification program, demonstrating proficiency in effective communication strategies. The certification covers various aspects of communication, including written and verbal skills, interpersonal communication, and presentation techniques. Acquired knowledge in crafting clear and concise messages, adapting communication styles to diverse audiences, and utilizing communication tools for professional collaboration. This certification enhances my ability to convey ideas, collaborate with team members, and present information clearly, contributing to effective and efficient workplace communication.
+            </p>
+            <a href="https://edyodalms.s3.amazonaws.com/files/certificates/Vishnu__achivement_Job_Focussed_Professional_Communication_Certification_16002_Qr_code_.png" class="btn btn-primary">CHECK HERE</a>
+        </div>
+        <div class="card-footer text-muted">
+          Completed
+        </div>
+    </div>
+    <div class="card text-center col-12">
+        <div class="card-header">
+           <h2> Full stack developer Certification </h2>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title"><br>
+            Issued by : Entri Elevate <br>
+            Date Earned : <i style="color: rgba(22,25,25,0.7);">December 2023 (expected)</i><br>
+            </h4>
+            <p class="card-text"><span style="font-size: 18px;font-size: 1000;">Description : </span> <br>
+                Completed an intensive MERN Stack Developer certification program through Entri Elevate, specializing in full-stack development using MongoDB, Express.js, React, and Node.js. This certification signifies expertise in building robust and scalable web applications, mastering both front-end and back-end technologies. Practical projects and hands-on experience were integral components of the program, showcasing proficiency in creating dynamic and responsive web solutions. This certification underscores my dedication to mastering the latest technologies in web development and delivering high-quality software solutions.
+            </p>
+            <a href="https://github.com/dashboard" class="btn btn-primary">CHECK HERE</a>
+        </div>
+        <div class="card-footer text-muted">
+          working on final project
+        </div>
+    </div>
+  </section>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html> 
